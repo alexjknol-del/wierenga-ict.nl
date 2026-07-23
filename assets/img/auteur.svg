@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Illustratie van Joost Wierenga">
+<title>Joost Wierenga</title>
+<circle cx="120" cy="120" r="120" fill="#EDF1F8"/>
+<circle cx="120" cy="132" r="82" fill="#E9BC97"/>
+<path d="M42 124c0-42 34-70 78-70s78 28 78 70c-6-22-22-32-36-28-12 4-24 8-42 8s-30-4-42-8c-14-4-30 6-36 28z" fill="#3A3226"/>
+<g fill="#26221C"><ellipse cx="96" cy="142" rx="6" ry="7.2"/><ellipse cx="144" cy="142" rx="6" ry="7.2"/></g>
+<g fill="none" stroke="#26315B" stroke-width="4"><circle cx="96" cy="142" r="17"/><circle cx="144" cy="142" r="17"/><path d="M113 142h14"/><path d="M79 140l-14-4"/><path d="M161 140l14-4"/></g>
+<path d="M102 172q18 11 36 0" fill="none" stroke="#A9503E" stroke-width="5" stroke-linecap="round"/>
+<circle cx="76" cy="160" r="9" fill="#DB7C63" opacity=".38"/><circle cx="164" cy="160" r="9" fill="#DB7C63" opacity=".38"/>
+<path d="M46 216q74-40 148 0v24H46z" fill="#26315B"/>
+<path d="M96 210q24 14 48 0l6 30H90z" fill="#F7FAFD"/>
+<rect x="112" y="222" width="16" height="6" rx="3" fill="#17B0C4"/>
+</svg>

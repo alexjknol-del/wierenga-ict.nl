@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Wierenga ICT">
+  <rect width="48" height="48" rx="10" fill="#26315B"/>
+  <rect x="9" y="13" width="30" height="20" rx="3" fill="#E7ECF5"/>
+  <rect x="12" y="16" width="24" height="14" rx="1.5" fill="#17B0C4"/>
+  <path d="M17 37h14l2 4H15z" fill="#E7ECF5"/>
+  <path d="M18 20l-4 3 4 3M30 20l4 3-4 3" stroke="#26315B" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
