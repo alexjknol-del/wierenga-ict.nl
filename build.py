@@ -20,7 +20,7 @@ IC={
  "book":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M20 4h-3a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5H20z"/></svg>',
  "menu":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>',
 }
-NAV=[("Home","/"),("Onderwerpen","/onderwerpen/"),("Gidsen","/gidsen/"),("Nieuws","/nieuws/"),("Over","/over/"),("Contact","/contact/")]
+NAV=[("Home","/"),("Onderwerpen","/onderwerpen/"),("Gidsen","/gidsen/"),("Nieuws","/nieuws/"),("Over","/over/"),("Partners","/partners/"),("Contact","/contact/")]
 
 def head(t,d,path,ld=None):
     can=BASE+path
@@ -305,6 +305,21 @@ def p_redactie():
   <p>Correcties en suggesties komen binnen via <a href="mailto:{EMAIL}">{EMAIL}</a>.</p></div></section>"""
     write(path,h+footer())
 
+
+def p_partners():
+    path="/partners/"; c=[("Home","/"),("Partners",path)]
+    ld=[crumb(c),{"@context":"https://schema.org","@type":"WebPage","@id":BASE+path,"url":BASE+path,"name":"Partners","inLanguage":"nl-NL"}]
+    h=head("Partners | "+SITE,"Partners en bronnen waar Wierenga ICT naar verwijst.",path,ld)+crumbs_html(c)
+    h+=f"""<section class="section"><div class="wrap prose">
+  <span class="eyebrow">Partners</span><h1>Partners en bronnen</h1>
+  <p class="lead">Wierenga ICT verwijst hier naar externe partners en bronnen.</p>
+  <div class="grid" style="grid-template-columns:repeat(2,1fr);gap:20px;margin-top:20px">
+  <div class="card"><h3>Van der Zwaard</h3><p>Van der Zwaard is een accountants- en belastingadvieskantoor in Den Haag, met dienstverlening voor ondernemers op het gebied van boekhouding, administratie en belastingadvies.</p><p style="margin-top:10px"><a href="https://www.vanderzwaard.nl/diensten/administratie-den-haag/" target="_blank" rel="noopener">administratie den haag</a></p></div>
+<div class="card"><h3>DLSA Letselschade Advocaten</h3><p>DLSA is gespecialiseerd in letselschade, onder meer voor (oud-)militairen met gezondheidsklachten door chroom-6 of PTSS, en begeleidt schadeclaims tegen Defensie.</p><p style="margin-top:10px"><a href="https://dlsa.nl/letselschade/ambtenaar/schadeclaim-defensie/" target="_blank" rel="noopener">defensie advocaat</a></p></div>
+</div>
+</div></section>"""
+    write(path,h+footer())
+
 def p_contact():
     path="/contact/"; c=[("Home","/"),("Contact",path)]
     ld=[crumb(c),{"@context":"https://schema.org","@type":"ContactPage","@id":BASE+path,"url":BASE+path,"name":"Contact","inLanguage":"nl-NL"}]
@@ -348,7 +363,7 @@ def p_404():
     open(os.path.join(OUT,"404.html"),"w",encoding="utf-8").write(h+footer())
 
 def extras():
-    u=["/","/over/","/redactie/","/onderwerpen/","/gidsen/","/nieuws/","/contact/","/privacybeleid/","/cookiebeleid/"]
+    u=["/","/over/","/redactie/","/onderwerpen/","/gidsen/","/nieuws/","/partners/","/contact/","/privacybeleid/","/cookiebeleid/"]
     u+=[f"/onderwerpen/{s['slug']}/" for s in ONDERWERPEN]+[f"/gidsen/{g['slug']}/" for g in GIDSEN]+[f"/nieuws/{a['slug']}/" for a in ARTIKELEN]
     open(os.path.join(OUT,"sitemap.xml"),"w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{x}</loc></url>\n" for x in u)+"</urlset>\n")
     open(os.path.join(OUT,"robots.txt"),"w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
@@ -366,7 +381,7 @@ def main():
     for g in GIDSEN: p_gids(g)
     p_nieuws()
     for a in ARTIKELEN: p_art(a)
-    p_contact(); p_legal(); p_404(); extras()
+    p_contact(); p_partners(); p_legal(); p_404(); extras()
     print("Build klaar in", OUT)
 
 if __name__=="__main__": main()
