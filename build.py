@@ -194,6 +194,17 @@ def p_home():
   <div class="grid cols-2">{"".join(newscard(a) for a in ARTIKELEN)}</div>
   <p style="margin-top:22px"><a class="more" href="/nieuws/">Alle artikelen {IC['arrow']}</a></p></div></section>
 
+<section class="section panel"><div class="wrap prose">
+  <span class="eyebrow">{IC['doc']}Aanbevolen</span>
+  <h2>Back-up en opslag buiten de deur</h2>
+  <p class="lead">Van alle maatregelen op deze site levert een werkende back-up buiten het eigen netwerk het meeste op. Een van de partijen die dat voor het mkb verzorgt:</p>
+  <div class="callout">
+    <p><strong>Data Opslag Nederland</strong></p>
+    <p>Data Opslag Nederland levert cloudopslag en automatische back-ups voor bedrijfsgegevens, met servers in Amsterdam en Delft en opslag die voldoet aan de AVG. Het aanbod omvat versleutelde uitwisseling met externe partijen, toegangsbeheer en synchronisatie tussen apparaten, met Nederlandstalige ondersteuning per telefoon. Geschikt voor organisaties van enkele gebruikers tot enkele duizenden medewerkers.</p>
+    <p style="margin-top:12px"><a href="https://www.dataopslagnederland.nl/" target="_blank" rel="noopener">dataopslagnederland.nl {IC['arrow']}</a></p>
+  </div>
+</div></section>
+
 <section class="section tight"><div class="wrap"><div class="cta">
   <h2>Een onderwerp gemist?</h2><p>Deze gids groeit op basis van vragen die binnenkomen. Suggesties en correcties zijn welkom bij de redactie.</p>
   <a class="btn btn-gold" href="/contact/">Mail de redactie {IC['arrow']}</a></div></div></section>"""
