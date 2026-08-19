@@ -19,7 +19,7 @@ p{margin:0 0 1rem}a{color:var(--plum)}img{max-width:100%;display:block}
 .nav a.navlink:hover{border-bottom-color:var(--gold)}
 .menu-toggle{display:none}
 .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:.93rem;padding:12px 22px;border-radius:8px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:inherit}
-.btn svg{width:16px;height:16px}
+a svg{width:15px;height:15px;vertical-align:-2px}.btn svg{width:16px;height:16px}
 .btn-plum{background:var(--plum);color:#fff;border-color:var(--plum)}.btn-plum:hover{background:var(--plum-d)}
 .btn-gold{background:var(--gold);color:#04303C;border-color:var(--gold)}.btn-gold:hover{background:var(--gold-d);color:#fff}
 .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn-ghost:hover{border-color:var(--plum)}
