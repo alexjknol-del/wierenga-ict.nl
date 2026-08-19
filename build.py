@@ -201,7 +201,7 @@ def p_home():
   <div class="callout">
     <p><strong>Data Opslag Nederland</strong></p>
     <p>Data Opslag Nederland levert cloudopslag en automatische back-ups voor bedrijfsgegevens, met servers in Amsterdam en Delft en opslag die voldoet aan de AVG. Het aanbod omvat versleutelde uitwisseling met externe partijen, toegangsbeheer en synchronisatie tussen apparaten, met Nederlandstalige ondersteuning per telefoon. Geschikt voor organisaties van enkele gebruikers tot enkele duizenden medewerkers.</p>
-    <p style="margin-top:12px"><a href="https://www.dataopslagnederland.nl/" target="_blank" rel="noopener">dataopslagnederland.nl {IC['arrow']}</a></p>
+    <p style="margin-top:12px"><a href="https://www.dataopslagnederland.nl/" target="_blank" rel="noopener">dataopslagnederland.nl</a></p>
   </div>
 </div></section>
 
