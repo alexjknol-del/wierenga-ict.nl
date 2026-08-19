@@ -71,6 +71,7 @@ def blocks(bs):
         elif b[0]=="h2": o.append(f"<h2>{esc(b[1])}</h2>")
         elif b[0]=="ul": o.append("<ul>"+"".join(f"<li>{esc(x)}</li>" for x in b[1])+"</ul>")
         elif b[0]=="callout": o.append(f'<div class="callout"><p>{esc(b[1])}</p></div>')
+        elif b[0]=="plink": o.append(f"<p>{b[1]}</p>")
     return "".join(o)
 def byline(): return f'<div class="byline"><img src="/assets/img/auteur.svg" alt="{esc(AUTEUR)}"><div class="who">{esc(AUTEUR)}<small>{esc(AUTEUR_ROL)}</small></div></div>'
 
@@ -141,6 +142,28 @@ GIDSEN=[
 ]
 
 ARTIKELEN=[
+ {"slug":'telefonie-bij-een-ict-migratie','titel':'Telefonie bij een ICT-migratie: het onderdeel dat te laat aan bod komt',"cat":'Praktijk',"datum":'2026-08-19',"datum_nl":'19 augustus 2026','lees':5,
+  'resume':'Werkplekken en bestanden staan in het plan. De telefooncentrale komt er meestal achteraan.',
+  "body":[
+  ('p', 'In een migratieplan staan de werkplekken, de bestandsopslag en de e-mail. Telefonie staat er zelden in, en komt in beeld op het moment dat het nieuwe netwerk al draait en de doorschakelingen niet meer werken.'),
+  ('h2', 'Waarom het misgaat'),
+  ('p', 'Telefonie hangt aan meer dan alleen een verbinding. Er zit een nummerplan achter, een keuzemenu, een reeks doorschakelingen bij afwezigheid en vaak een koppeling met het klantsysteem. Die onderdelen zijn ooit ingeregeld en daarna jarenlang niet meer aangeraakt.'),
+  ('p', 'Wanneer een organisatie migreert, blijkt dan dat niemand meer weet waarom een bepaalde doorschakeling bestaat. Het gevolg is een centrale die opnieuw wordt opgebouwd op basis van aannames, met gemiste oproepen in de weken erna.'),
+  ('h2', 'Wat er vooraf in kaart hoort'),
+  ('ul', ['Alle nummers, inclusief de nummers die alleen intern worden gebruikt.', 'Wie welk toestel of welke app gebruikt, en op welke locatie.', "De keuzemenu's en de teksten die daarbij worden afgespeeld.", 'De afspraken over openingstijden, feestdagen en avonddoorschakeling.']),
+  ('plink', 'Die inventarisatie kost een halve dag en voorkomt het grootste deel van de problemen. Wat een gehoste oplossing daarbij betekent staat bij <a href="https://www.pbxcomplete.nl/cloud-telefonie/" rel="nofollow">PBXcomplete</a>.'),
+  ('h2', 'Nummerbehoud'),
+  ('p', 'Nummerportering is de stap met de langste doorlooptijd en de minste flexibiliteit. Een porteringsdatum ligt vast, en die datum bepaalt vervolgens het hele migratieschema en niet andersom.'),
+  ('plink', 'Plan de portering daarom vroeg en houd rekening met een overlapperiode waarin oud en nieuw naast elkaar draaien. Wat er bij zakelijke telefonie aan mogelijkheden is, staat op <a href="https://www.pbxcomplete.nl/voip-zakelijk/" rel="nofollow">pbxcomplete.nl</a>.'),
+  ('h2', 'Na de overgang'),
+  ('p', 'Controleer in de eerste week de gemiste oproepen en de bezetting per keuzemenu. Een verkeerd doorgezette keuze valt in een test zelden op en in de praktijk binnen dagen.'),
+  ('p', 'Leg de nieuwe inrichting bovendien vast in een document dat bij de rest van de netwerkdocumentatie hoort. Dat is precies wat er bij de vorige migratie ontbrak, en zonder die vastlegging herhaalt het probleem zich over een paar jaar opnieuw.'),
+  ('h2', 'Kosten die pas later zichtbaar worden'),
+  ('p', "Bij de overstap wordt gerekend met de maandelijkse abonnementskosten per gebruiker. Wat er zelden bij staat, zijn de kosten van toestellen, de inrichting van keuzemenu's en het meeverhuizen van een koppeling met het klantsysteem."),
+  ('p', 'Vraag daarom een opgave over drie jaar in plaats van per maand, inclusief de eenmalige posten. Een abonnement dat per gebruiker een euro goedkoper is maar een aanzienlijke inrichting vraagt, valt over die periode duurder uit dan het alternatief.'),
+  ('p', 'Let daarbij ook op de opzegtermijn en op wat er gebeurt met de nummers bij beëindiging. Nummers die formeel op naam van de leverancier staan in plaats van op naam van de organisatie, maken een latere overstap aanzienlijk ingewikkelder dan hij zou moeten zijn.'),
+  ("p", DISC),
+ ]},
  {"slug":"waarom-back-ups-falen","titel":"Waarom back-ups vaker falen dan gedacht","cat":"Praktijk","datum":"2026-07-18","datum_nl":"18 juli 2026","lees":4,
   "resume":"Bijna elke organisatie heeft een back-up. Aanzienlijk minder organisaties hebben er ooit een teruggezet.",
   "body":[("p","Het vertrouwen in back-ups is groot en de controle erop klein. Dat verschil komt pas aan het licht op het moment dat herstel nodig is."),
