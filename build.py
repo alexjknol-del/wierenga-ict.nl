@@ -142,6 +142,30 @@ GIDSEN=[
 ]
 
 ARTIKELEN=[
+ {"slug":"security-awareness-meertalig-team","titel":"Security awareness in een meertalig team: waarom de standaardtraining niet aankomt","cat":"Praktijk","datum":"2026-08-22","datum_nl":"22 augustus 2026","lees":6,
+  "resume":"Phishingtraining in het Nederlands mist precies de collega die het meeste risico loopt. Wat er wel werkt in een ploeg met vijf moedertalen.",
+  "body":[
+  ("p", "In veel mkb-bedrijven bestaat het personeelsbestand allang niet meer uit alleen Nederlandstalige medewerkers. In de techniek, de logistiek en de productie is een ploeg met vier of vijf moedertalen normaal. De securitytraining is dat meestal niet: die is in het Nederlands, bestaat uit tekst en wordt een keer per jaar afgevinkt."),
+  ("p", "Het gevolg is voorspelbaar. De medewerker die de taal het minst goed beheerst, haalt het minste uit de training en is tegelijk het meest kwetsbaar voor een bericht dat op het eerste gezicht klopt."),
+  ("h2", "Waarom taal hier zwaarder weegt dan elders"),
+  ("p", "Phishing werkt op nuance. Een net iets te formele aanhef, een woord dat een Nederlander nooit zou gebruiken, een zin die grammaticaal klopt maar vreemd voelt. Precies die signalen zijn onzichtbaar voor iemand die de taal functioneel maar niet gevoelsmatig beheerst."),
+  ("p", "Daar komt bij dat aanvallers hun berichten inmiddels foutloos laten vertalen. Het klassieke advies om op spelfouten te letten werkt niet meer, en voor anderstalige collegas werkte het sowieso al niet."),
+  ("h2", "Wat er in de praktijk misgaat"),
+  ("ul", ["De training staat alleen in het Nederlands en wordt niet aangeboden in de talen die op de vloer worden gesproken.",
+     "Er wordt getoetst op afvinken en niet op begrip, waardoor niemand merkt dat de boodschap niet is overgekomen.",
+     "Meldingen doen gaat via een formulier in het Nederlands, dus wordt er niet gemeld.",
+     "De voorbeelden komen uit een kantooromgeving terwijl de doelgroep in een loods of een werkplaats staat."]),
+  ("h2", "Wat wel werkt"),
+  ("p", "Begin bij het meldingsproces en niet bij de training. Een medewerker die twijfelt, moet in dertig seconden kunnen melden zonder een formulier in te vullen dat hij half begrijpt. Een appgroep met een vaste contactpersoon doet meer voor de veiligheid dan een uitgebreide e-learning."),
+  ("p", "Daarnaast helpt het om de training visueel te maken. Schermafbeeldingen van echte berichten met pijlen erbij komen aan zonder dat er veel tekst aan te pas komt. Simulaties werken om dezelfde reden goed: je oefent het gedrag in plaats van de theorie."),
+  ("h2", "Taalvaardigheid is een securitymaatregel"),
+  ("p", "Op langere termijn is investeren in de taalvaardigheid van het team ook een investering in weerbaarheid. Wie de werktaal beter beheerst, leest instructies nauwkeuriger, meldt eerder en begrijpt waarom een procedure bestaat."),
+  ("plink", "Aanbieders van zakelijke taaltraining werken daarom vaak incompany met materiaal uit de organisatie zelf. Bij <a href=\"https://speakandspoke.nl/\" rel=\"nofollow\">Speak And Spoke</a> is dat het uitgangspunt: de woorden die geoefend worden zijn de woorden die op die specifieke werkvloer rondgaan, inclusief de begrippen uit procedures en veiligheidsinstructies."),
+  ("plink", "Voor organisaties die dat gefaseerd willen aanpakken, is een online leeromgeving een praktische tussenstap. Op <a href=\"https://speakandspoke.nl/online-leren/\" rel=\"nofollow\">speakandspoke.nl</a> staat beschreven hoe zon omgeving naast klassikale sessies functioneert."),
+  ("h2", "Praktisch beginnen"),
+  ("p", "Voor een mkb-bedrijf met een gemengd team zijn drie stappen genoeg om het niveau merkbaar op te tillen. Vertaal de meldprocedure naar de talen die daadwerkelijk worden gesproken. Vervang de jaarlijkse tekstuele training door vier korte sessies met echte voorbeelden. En laat na elke sessie iemand in eigen woorden herhalen wat hij moet doen bij twijfel."),
+  ("p", "Dat kost samen minder dan een dag per jaar en pakt de zwakste schakel aan in plaats van de gemiddelde.")]},
+
  {"slug":'patronen-herkennen-ict-knelpunten','titel':'Zo leer je patronen herkennen achter steeds terugkerende ICT knelpunten',"cat":'Praktijk',"datum":'2026-08-20',"datum_nl":'20 augustus 2026','lees':5,
   'resume':'Hetzelfde probleem duikt steeds weer op, maar ziet er elke keer net iets anders uit. Met een paar bewuste stappen maak je het patroon zichtbaar.',
   "body":[
