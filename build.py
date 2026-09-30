@@ -142,6 +142,24 @@ GIDSEN=[
 ]
 
 ARTIKELEN=[
+ {"slug": "barcode-etiketten-scanner-en-voorraadsysteem", "titel": "Barcode etiketten in het magazijn: scanner, software en etiket op elkaar afstemmen", "cat": "Praktijk", "datum": "2026-09-07", "datum_nl": "7 september 2026", "lees": 4, "resume": "Een barcode werkt pas als scanner, software en etiket bij elkaar passen. Waar het bij de koppeling met een voorraadsysteem misgaat en hoe dat te voorkomen is.", "body": [
+  ("p", "Barcodes in een magazijn lijken een kwestie van etiketten printen en scanners aansluiten. In de praktijk loopt een invoering vaker vast op de koppeling tussen de onderdelen: een code die de scanner wel leest maar de software niet herkent, een etiket dat na een paar weken onleesbaar is, of een scanner die een extra teken meestuurt. Wie de onderdelen vooraf op elkaar afstemt, voorkomt het meeste gedoe."),
+  ("h2", "Begin bij de gegevens"),
+  ("p", "Een barcode is een andere schrijfwijze van een code die al in een systeem staat. Voor locaties is dat een vaste opbouw van gang, stelling, plank en vak. Voor artikelen is dat het artikelnummer uit het voorraad- of ERP-systeem. Die nummering hoort eerst in het systeem vast te liggen, pas daarna worden etiketten gemaakt. Een wijziging achteraf betekent alle etiketten opnieuw."),
+  ("h2", "Het barcodetype kiezen"),
+  ("p", "Code 128 is voor interne codes de meest gebruikte keuze: compact, geschikt voor letters en cijfers en door vrijwel elke scanner te lezen. Code 39 is ouder en neemt bij dezelfde lengte meer ruimte in. EAN-13 hoort bij producten in de handel en werkt met nummers die centraal worden uitgegeven, en is dus niet bedoeld voor eigen locatiecodes. Een QR-code bevat meer gegevens en is met een telefooncamera te lezen, maar vraagt om een scanner die tweedimensionale codes ondersteunt."),
+  ("h2", "Scanner en software laten samenwerken"),
+  ("p", "De meeste handscanners gedragen zich tegenover de computer als een toetsenbord. Ze typen de code in het veld waar de cursor staat en sluiten af met een Enter. Dat is eenvoudig, maar er gaat geregeld iets mis. Een scanner die een voorvoegsel of een Tab meestuurt, of een toetsenbordindeling die afwijkt van die van de computer, levert codes op met verkeerde tekens. De instellingen zijn bij de meeste scanners aan te passen door een configuratiebarcode uit de handleiding te scannen."),
+  ("p", "Bij draadloze scanners en mobiele terminals speelt ook het netwerk mee. Een magazijn met een zwak wifisignaal tussen de stellingen levert scans op die niet aankomen of dubbel worden verwerkt. Een meting van de dekking voordat de scanners in gebruik gaan, bespaart later zoekwerk naar voorraadverschillen."),
+  ("h2", "Een etiket dat leesbaar blijft"),
+  ("plink", "Een scanfout ligt niet altijd aan de techniek. Een gekreukeld, vuil of half losgelaten etiket leest slecht, en een glanzende toplaag kan licht terugkaatsen. Op stalen stellingen worden vaak magnetische etiketten gebruikt, omdat die mee kunnen verhuizen als de indeling verandert. Bij <a href=\"https://www.mms-magneet.nl/barcode-etiketten/\" target=\"_blank\" rel=\"noopener\">MMS Magneetservice</a> zijn magazijnetiketten zowel magnetisch als zelfklevend verkrijgbaar, kant-en-klaar gedrukt op basis van aangeleverde gegevens of als materiaal om zelf te printen."),
+  ("p", "Bij zelf printen moet het etiketmateriaal passen bij de printer. Een thermotransferprinter vraagt om ander materiaal dan een inkjet- of laserprinter, en niet elk etiket verdraagt de warmte van elke printer."),
+  ("h2", "Testen voor de uitrol"),
+  ("p", "Een proef met een paar stellingen levert meer op dan een volledige uitrol in één weekend. Het etiket hoort getest te worden op de werkelijke plek en afstand, met de scanner die er straks gebruikt wordt. Daarna volgt een controle in het systeem: komt de gescande code op de juiste regel terecht, en klopt de voorraadmutatie? Pas dan volgt de rest van het magazijn."),
+  ("h2", "Beheer na de invoering"),
+  ("plink", "Een barcodesysteem vraagt om onderhoud. Nieuwe artikelen en locaties krijgen direct een etiket, beschadigde etiketten worden vervangen en de scannerinstellingen horen in de documentatie van de ICT-omgeving, zodat een vervangend apparaat op dezelfde manier wordt ingesteld. Over etiketmateriaal en houders is telefonisch advies te krijgen via <a href=\"https://www.mms-magneet.nl/\" target=\"_blank\" rel=\"noopener\">mms-magneet.nl</a>."),
+  ("p", "Met goed afgestemde onderdelen blijft de voorraad in het systeem gelijk aan wat er werkelijk op de plank ligt."),
+ ]},
  {"slug":"ict-veiligheid-zonder-dure-omwegen","titel":"ICT-veiligheid zonder dure omwegen","cat":"Praktijk","datum":"2026-09-05","datum_nl":"5 september 2026","lees":8,
   "resume":"Back-ups testen, phishing beperken, wachtwoorden regelen en updates beheren: de basis die een mkb-organisatie echt kan uitvoeren.",
   "body":[
